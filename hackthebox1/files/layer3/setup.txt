@@ -1,0 +1,5 @@
+put contents of exports into /etc/exports
+mkdir /data
+chmod 777 /data
+chmod 640 /etc/exports
+/etc/init.d/nfs-kernel-server restart

@@ -1,0 +1,2 @@
+git clone https://github.com/mnooner256/pyqrcode.git
+git clone https://github.com/savoirfairelinux/num2words.git

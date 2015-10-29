@@ -1,0 +1,33 @@
+Port: 33080
+
+apt-get install python-pillow python-setuptools python-qrtools python-qrcode
+Install pyqrcode and num2words packages
+
+runs as qrquiz user. in /opt/qrquiz
+-r-------- 1 qrquiz qrquiz    15 Jul 17 13:06 flag.txt
+drwxr-xr-x 2 qrquiz qrquiz 12288 Jul 17 14:11 images
+-rw-r--r-- 1 qrquiz qrquiz  8353 Jul 17 14:11 qrquiz.log
+-rwxr--r-- 1 qrquiz qrquiz  3788 Jul 17 14:10 qrquiz_server.py
+-rw-r--r-- 1 qrquiz qrquiz  1399 Jul 17 12:49 word2num.py
+-rw-r--r-- 1 qrquiz qrquiz  1683 Jul 17 13:07 word2num.pyc
+
+
+
+/lib/systemd/system/qrquiz.service
+[Unit]
+Description=Start QRQuiz Server
+
+[Service]
+ExecStart=/opt/qrquiz/qrquiz_server.py
+Restart=always
+RestartSec=60
+User=qrquiz
+Group=qrquiz
+
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+

@@ -1,0 +1,23 @@
+Build Debain ubuntu 12.04 LTS VM
+1 cpu
+5gb disk
+128 MB ram
+
+once server is built
+
+apt-get install php5 apache2 nfs-kernel-server curl
+
+once above packages are installed put a hold on the follwoing pagkes using "apt-mark hold"
+
+apache2-mpm-prefork
+apache2-utils
+apache2.2-bin
+apache2.2-common
+libapache2-mod-php5
+libssl1.0.0
+openssl
+php5
+python-openssl
+
+
+Perform a do-release-upgrade

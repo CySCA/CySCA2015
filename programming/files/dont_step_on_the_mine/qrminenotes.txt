@@ -1,0 +1,34 @@
+Port: 22524
+
+apt-get install python-pillow python-setuptools python-qrtools python-qrcode
+Install pyqrcode package
+
+runs as qrmine user. in /opt/qrmine
+4.0K drwxr-xr-x 3 qrquiz qrquiz 4.0K Jul 18 18:03 .
+4.0K drwxr-xr-x 4 root   root   4.0K Jul 18 17:59 ..
+4.0K -r-------- 1 qrquiz qrquiz   11 Jul 18 18:02 flag.txt
+4.0K drwxr-xr-x 2 qrquiz qrquiz 4.0K Jul 18 17:59 images
+ 36K -rw-r--r-- 1 qrquiz qrquiz  34K Jul 18 18:06 qrmine.log
+4.0K -rwxr--r-- 1 qrquiz qrquiz 3.6K Jul 18 18:03 qrmine_server.py
+
+
+
+
+/lib/systemd/system/qrmine.service
+[Unit]
+Description=Start QRMine Server
+
+[Service]
+ExecStart=/opt/qrquiz/qrmine_server.py
+Restart=always
+RestartSec=60
+User=qrmine
+Group=qrmine
+
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+

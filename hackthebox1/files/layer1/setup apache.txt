@@ -1,0 +1,6 @@
+cd /etc/apache2/mods-enabled
+ln -s ../mods-available/ssl.* .
+cd /etc/apache2/sites-enabled
+ln -s ../sites-available/default-ssl 000-default-ssl
+
+/etc/init.d/apache2 restart

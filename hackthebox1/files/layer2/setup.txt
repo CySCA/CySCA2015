@@ -1,0 +1,9 @@
+create the user jimsmith with a random password (use the group,passwd,shadow files for reference)
+
+create .ssh in jimsmith's home directory
+copy authorized_Keys into /home/jimsmith/.ssh/authorized_keys
+chown -R jimsmith:jimsmith /home/jimsmith
+chmod 700 /home/jimsmith/.ssh
+chmod 600 /home/jimsmith/.ssh/authorized_Keys
+
+ln -s /data /home/jimsmith/data

@@ -11,7 +11,6 @@ Information
 This repository contains raw challenge files and writeups for the CySCA2015 competition.
 
 * Write-ups will be added as they are completed.
-* A more user friendly (in-a-box) version of CySCA2015 will be released at a future date
 
 Sections
 --------

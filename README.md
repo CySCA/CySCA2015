@@ -10,7 +10,7 @@ Information
 -----------
 This repository contains raw challenge files and writeups for the CySCA2015 competition.
 
-* Write-ups will be added as they are completed.
+* Write-ups by the various supporters will be added as they are completed.
 
 Sections
 --------
@@ -24,4 +24,3 @@ Sections
 * [Extra - Python Exploitation](python_exploitation/README.md)
 * [Extra - Hack The Box](hackthebox1/README.md)
 * [Extra - Hack The Box 2](hackthebox2/README.md)
-
